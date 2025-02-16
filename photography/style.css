@@ -1,0 +1,117 @@
+
+  * {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    overflow-x: hidden;
+  }
+
+  /* Sticky NavBar */
+#navbar {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff; 
+  padding: 15px; 
+  display: flex;
+  justify-content: space-around; 
+  transition: background-color 0.5s ease; 
+  z-index: 1000;
+}
+#navbar a {
+  color:#000;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+#navbar a:hover {
+  color: #FF80B4;
+}
+
+/*photo*/
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 120px; /* 图片之间的间隔更大 */
+  max-width: 70%; /* 限制整体宽度，使图片整体缩小 */
+  margin: 0 auto;
+  margin-top:100px;
+  padding: 10px;
+  align-items: center;
+  margin-left: 260px;
+  
+}
+
+.gallery img {
+  width: 80%; /* 图片整体缩小 */
+  height: auto;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* 增强阴影 */
+}
+
+.last-photo {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.last-photo img {
+  width: 15%; /* 让最后一张图片再缩小一些 */
+  max-width: 250px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 80px;
+  margin-bottom:80px;
+}
+
+/*mobile version*/
+/* 保持桌面端（laptop）布局 */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 三列布局 */
+  gap: 120px; /* 原本的间隔 */
+  max-width: 70%; /* 适当控制整体宽度 */
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 10px;
+  align-items: center;
+  margin-left: 260px; /* 保持 Laptop 版的左边距 */
+}
+
+/* 修正 Mobile 端布局 */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); /* 在中等屏幕上改为两列 */
+    gap: 20px; /* 缩小间距 */
+    max-width: 90%; /* 让图片区域占满屏幕 */
+    margin-left: auto; /* 居中 */
+    margin-right: auto;
+  }
+
+  .gallery img {
+    width: 100%; /* 让图片填充网格 */
+  }
+
+  .last-photo img {
+    width: 40%; /* 适当放大最后一张图片 */
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: repeat(1, 1fr); /* 在小屏幕上改为单列 */
+    gap: 15px;
+    max-width: 95%;
+  }
+
+  .gallery img {
+    width: 100%;
+  }
+
+  .last-photo img {
+    width: 50%; /* 适当调整最后一张照片 */
+  }
+}
+
