@@ -1,0 +1,89 @@
+
+* {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+/* Sticky NavBar */
+#navbar {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff; 
+  padding: 15px; 
+  display: flex;
+  justify-content: space-around; 
+  transition: background-color 0.5s ease; 
+  z-index: 1000;
+}
+#navbar a {
+  color:#000;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+#navbar a:hover {
+  color: #FF80B4;
+}
+
+/* Video and Text Layout */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  padding: 20px;
+  gap: 60px;
+}
+
+/* Swap Layout */
+.container.swap {
+  flex-direction: row-reverse;
+}
+
+/* Video Styling */
+.video {
+  width: 20%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+/* Description Styling */
+.description {
+  width: 45%;
+  max-width: 400px;
+  margin-left: 120px;
+  padding: 10px 0;
+}
+
+/* Title Styling */
+.description h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #222;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Paragraph Styling */
+.description p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #444;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-align: justify;
+}
+
+
+
+img {
+  width: 100vw;
+  height: auto;  /* 让图片保持原始比例 */
+  display: block;
+}
