@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Sticky NavBar */
+#navbar {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff; 
+  padding: 15px; 
+  display: flex;
+  justify-content: space-around; 
+  transition: background-color 0.5s ease; 
+  z-index: 1000;
+}
+#navbar a {
+  color:#000;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+#navbar a:hover {
+  color: #FF80B4;
+}
+
+/*end*/
+
+body {
+  background-color: #fff; /* 纯白色背景 */
+  margin: 0;
+  padding: 0;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+  margin: 100px auto 0; /* 上方留白，水平居中 */
+  padding: 20px;
+  background-color: #fff; /* 确保 About Me 区域也是白色 */
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-right: 80px;
+}
+
+.profile-photo {
+  width: 250px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px; /* 让邮箱和位置不会太贴着图片 */
+  margin-top:50px;
+}
+
+.contact {
+  font-size: 16px;
+  color: #333;
+}
+
+.contact a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.text-content {
+  max-width: 800px;
+  color: #333; /* 让文字颜色稍微深一点，提高对比度 */
+  line-height: 2; /* 增大行距 */
+}
+
+.divider {
+  border: none;
+  height: 1px;
+  background-color: #ddd; /* 浅灰色横线 */
+  margin: 20px 0;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row; /* 确保横向排列 */
+  justify-content: flex-start; /* 靠左对齐 */
+  align-items: center; /* 让所有图标的中心点对齐 */
+  gap: 20px; /* 图标间隔 */
+  flex-wrap: nowrap; /* 防止图标换行 */
+  margin-top: 20px; /* 调整与上方内容的间距 */
+}
+
+.skills img {
+  width: 40px; /* 统一图标宽度 */
+  height: 40px; /* 统一图标高度 */
+  object-fit: contain; /* 保持原始比例，防止拉伸 */
+}
+
+/*contact*/
+.left-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 让内容左对齐 */
+  text-align: left; /* 确保文本左对齐 */
+
+}
+
+.contact {
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+  margin-left:30px;
+}
+
+.contact p {
+  margin: 5px 0;
+}
+
